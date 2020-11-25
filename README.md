@@ -1,4 +1,4 @@
-Trabajo Práctico Final Obligatorio
+TRABAJO FINAL OBLIGATORIO
 
 
 MATERIA:
