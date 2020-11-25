@@ -1,11 +1,11 @@
 <?php
 
-/**************************************************************************
+/****************************************************************************************************
  * GRUPO N°8 
- * ESPINDOLA, DARIO G.  - FAI-1220
- * PEÑA MUÑOZ, OLIVIA P. - FAI-3122
- * Enlace GitHub: https://github.com/DarioEspindola/phpAhorcadoGrupo8.git
- **************************************************************************/
+ * ESPINDOLA, DARIO G.  - FAI-1220  -   https://github.com/DarioEspindola/phpAhorcadoGrupo8.git
+ * PEÑA MUÑOZ, OLIVIA P. - FAI-3122 -   https://github.com/OliviaPM/phpAhorcadoGrupo8.git  
+
+ ****************************************************************************************************/
 
 
 
@@ -67,7 +67,7 @@ function dividirPalabraEnLetras($palabra){
 
     $coleccionLetras = array();
     for ($i = 0; $i < strlen($palabra); $i++) { //se utiliza la funcion STRLEN para dividir la palabra en letras. 
-        $coleccionLetras[$i] = array("letra" => $palabra[$i], "descubierta" => false); //arreglo multidimensinal: indexado y asociativo. 
+        $coleccionLetras[$i] = array("letra" => $palabra[$i], "descubierta" => false); //arreglo multidimensional: indexado y asociativo. 
     }
     return $coleccionLetras;
 }
@@ -100,14 +100,14 @@ function seleccionarOpcion(){
         $opcion = trim(fgets(STDIN));
         echo "└─┬──────────────────────────\n";
         
-            if ($opcion < 0 || $opcion > 8){
+            if ($opcion < 1 || $opcion > 8){
                 echo "┌─┴──────────────────────────────────────┐\n";
                 echo "│ ►► La opción ingresada NO es válida ◄◄ │\n";
                 echo "│     ►  Ingrese una opción válida  ◄    │\n";
                 echo "└─┬──────────────────────────────────────┘\n";
             }
 
-    } while ($opcion < 0 || $opcion > 8);
+    } while ($opcion < 1 || $opcion > 8);
     
     return $opcion;
 }
