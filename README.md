@@ -1,5 +1,3 @@
-"# phpAhorcadoGrupo8" 
-
 
 MATERIA:        ► Introducción a la Programación. 
 
